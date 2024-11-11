@@ -1,0 +1,21 @@
+{
+  "name": "hishabpati_automationfe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js",
+    "getReport": "allure generate allure-results --clean && allure open"
+  },
+  "author": "Arafat",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.2.2",
+    "@wdio/cli": "^9.2.11",
+    "@wdio/local-runner": "^9.2.11",
+    "@wdio/mocha-framework": "^9.2.8"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.32.0"
+  }
+}
