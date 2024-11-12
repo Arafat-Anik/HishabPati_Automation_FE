@@ -12,8 +12,6 @@ describe("Testing Account Login journey", () => {
         await loginPageAction.clickOnOTP(otp);
         await browser.pause(2000);
         await loginPageAction.clickOnOTPSubmit();
-        await browser.pause(2000);
-        
-        
+        await browser.pause(2000);         
     })
 })

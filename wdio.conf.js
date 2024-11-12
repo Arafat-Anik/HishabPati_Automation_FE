@@ -1,4 +1,6 @@
-const testingAccountJourney = "./test/specs/testingAccount.spec.js"
+const loginPageJourney = "./test/specs/loginPage.spec.js";
+const homePageJourney = "./test/specs/homepage.spec.js";
+
 exports.config = {
     //
     // ====================
@@ -22,13 +24,20 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        testingAccountJourney,
+        loginPageJourney,
+        homePageJourney,
     ],
+
+    suites: {
+        allspecs: [
+            [loginPageJourney, homePageJourney]
+        ],
+      },
     
     // Patterns to exclude.
-    exclude: [
-        // 'path/to/excluded/files'
-    ],
+    // exclude: [
+    //     // 'path/to/excluded/files'
+    // ],
     //
     // ============
     // Capabilities
