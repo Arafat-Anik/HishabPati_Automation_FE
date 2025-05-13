@@ -1,7 +1,7 @@
 const homePageAction = require("../pageobjects/homePage/homePageAction")
 
 
-describe("Testing Account Add New Sale journey", () => {
+describe("Testing Account HomePage journey", () => {
     it("Should Add new Sale successfully", async () => {
         await homePageAction.clickOnSaleNowButton();
         await browser.pause(1000);      

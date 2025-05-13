@@ -1,5 +1,7 @@
 const loginPageJourney = "./test/specs/loginPage.spec.js";
 const homePageJourney = "./test/specs/homepage.spec.js";
+const addnewSaleJourney = "./test/specs/addSale.spec.js";
+const addnewPurchaseJourney = "./test/specs/addPurchase.spec.js";
 
 exports.config = {
     //
@@ -26,11 +28,25 @@ exports.config = {
     specs: [
         loginPageJourney,
         homePageJourney,
+        addnewSaleJourney,
+        addnewPurchaseJourney,
     ],
 
     suites: {
         allspecs: [
             [loginPageJourney, homePageJourney]
+        ],
+      },
+
+    suites: {
+        addnewsale: [
+            [loginPageJourney, addnewSaleJourney]
+        ],
+      },
+
+    suites: {
+        addnewpurchase: [
+            [loginPageJourney, addnewPurchaseJourney]
         ],
       },
     

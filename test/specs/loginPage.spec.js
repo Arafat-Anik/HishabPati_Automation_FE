@@ -12,7 +12,7 @@ describe("Testing Account Login journey", () => {
         await loginPageAction.clickOnOTP(otp);
         await browser.pause(2000);
         await loginPageAction.clickOnOTPSubmit();
-        await browser.pause(60000);  
+        await browser.pause(45000);  
 
        // await loginPageAction.clickOnOTPSubmit().waitForExist({ timeout: 5000 });
 

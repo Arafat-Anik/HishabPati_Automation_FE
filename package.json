@@ -5,6 +5,8 @@
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
     "allspecs": "wdio run ./wdio.conf.js --suite allspecs",
+    "addnewsale": "wdio run ./wdio.conf.js --suite addnewsale",
+    "addnewpurchase": "wdio run ./wdio.conf.js --suite addnewpurchase",
     "getReport": "allure generate allure-results --clean && allure open"
   },
   "author": "Arafat",
