@@ -11,6 +11,15 @@ class homePageAction{
     async clickPartyFromDropdown(){
         await homePageLocator.partyfromDropdown.click();
     }
+    async clickItemsearchDropdown(){
+        await homePageLocator.ItemDropdown.click();
+    }
+    async clickItemFromDropdown(){
+        await homePageLocator.ItemfromDropdown.click();
+    }
+    async clicksubmitsalebutton(){
+        await homePageLocator.clicksubmitsale.click();
+    }
 
    
 

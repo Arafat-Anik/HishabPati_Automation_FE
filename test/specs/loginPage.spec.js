@@ -12,6 +12,20 @@ describe("Testing Account Login journey", () => {
         await loginPageAction.clickOnOTP(otp);
         await browser.pause(2000);
         await loginPageAction.clickOnOTPSubmit();
-        await browser.pause(2000);         
+        await browser.pause(70000);  
+
+       // await loginPageAction.clickOnOTPSubmit().waitForExist({ timeout: 5000 });
+
+    //     const SubmitButton = loginPageAction.clickOnOTPSubmit();
+    //    // await loginButton.waitForDisplayed({ timeout: 5000 });
+    //     await browser.waitUntil(
+    //     async () => (await browser.execute(() => SubmitButton)) === true,
+    //     {
+    //         timeout: 100000,
+    //         timeoutMsg: 'Page did not load within 10 seconds'
+    //     }
+    //     );
+
+    
     })
 })

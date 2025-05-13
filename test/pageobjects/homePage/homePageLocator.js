@@ -8,9 +8,22 @@ class homePageLocator{
        
     }
     get partyfromDropdown(){
-        return $("//div[contains(@class,'custom-ngx-typeahead-dropdown')]//div[@class='word-break']");
+        return $("//div[normalize-space()='ABC']");
        
     }
+    get ItemDropdown(){
+        return $("//input[@placeholder='পণ্য অনুসন্ধান']");
+       
+    }
+    get ItemfromDropdown(){
+        return $("//div[normalize-space()='Apple']");
+       
+    }
+    get clicksubmitsale(){
+        return $("//button[contains(text(),'সেভ করুন')]");
+       
+    }
+
 
 }
 module.exports = new homePageLocator();

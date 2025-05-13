@@ -3,11 +3,13 @@ const homePageAction = require("../pageobjects/homePage/homePageAction")
 
 describe("Testing Account Add New Sale journey", () => {
     it("Should Add new Sale successfully", async () => {
-        await homePageAction.clickOnSaleNowButton.click();
-       // await browser.pause(2000);
-        await homePageAction.clickOnPartySearchDropdown.click();
-        await browser.pause(2000);
-        await homePageAction.clickPartyFromDropdown.click() ;
+        await homePageAction.clickOnSaleNowButton();
+        await browser.pause(1000);      
+        await homePageAction.clickOnPartySearchDropdown();
+        await browser.pause(1000);
+        await homePageAction.clickPartyFromDropdown();
+        await browser.pause(1000);
+        
                  
     })
 })
