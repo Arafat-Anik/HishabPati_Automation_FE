@@ -21,8 +21,6 @@ class homePageAction{
         await homePageLocator.clicksubmitsale.click();
     }
 
-   
-
 }
 
 module.exports = new homePageAction();

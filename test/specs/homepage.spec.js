@@ -9,6 +9,13 @@ describe("Testing Account Add New Sale journey", () => {
         await browser.pause(1000);
         await homePageAction.clickPartyFromDropdown();
         await browser.pause(1000);
+        await homePageAction.clickItemsearchDropdown();
+        await browser.pause(1000);
+        await homePageAction.clickItemFromDropdown();
+        await browser.pause(1000);
+
+        await homePageAction.clicksubmitsalebutton();
+        await browser.pause(3000);
         
                  
     })
